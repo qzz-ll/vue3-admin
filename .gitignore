@@ -1,0 +1,21 @@
+# 1. 编译生成的文件
+dist/
+
+# 2. 日志文件
+debug.log
+
+# 3. 临时文件
+
+# 4. 依赖管理工具生成的文件
+node_modules/
+
+# 5. 敏感信息
+
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

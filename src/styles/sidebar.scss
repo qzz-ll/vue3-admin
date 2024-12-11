@@ -1,0 +1,46 @@
+//  侧边栏
+.sidebar-container {
+  transition: width 0.28s;
+  width: $sideBarWidth !important;
+  // height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  border-right: 1px solid $--el-border-color;
+  border-bottom: 1px solid $--el-border-color;
+  background: $white;
+
+  .el-menu {
+    border-right: none;
+
+    .router-link-active {
+      &.router-link-exact-active {
+        li {
+          background-color: $background-nav;
+          color: $el-mune-text-font-color;
+        }
+      }
+    }
+
+    .el-menu-item {
+      &.is-active {
+        background-color: $background-nav;
+      }
+    } 
+  }
+
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+
+  .el-scrollbar {
+    height: 100%;
+
+    .el-menu-vertical {
+      min-height: 100vh;
+      background-color: #2B3F51;
+    }
+  }
+}

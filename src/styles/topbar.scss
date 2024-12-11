@@ -1,0 +1,53 @@
+// top栏
+.topbar-container {
+  width: calc(100% - $sideBarWidth);
+  height: 60px !important;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  border-bottom: 1px solid #E9EAEC !important;
+  display: flex;
+  margin-left: $sideBarWidth;
+
+  .el-menu--horizontal {
+    &.el-menu {
+      border-bottom: none;
+
+      .el-menu-item {
+        &.is-active {
+          background-color: $background-nav;
+        }
+      }
+    }
+  }
+  // 面包屑
+  .bread-crumb {
+    min-width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background: $white;
+  }
+
+  // top导航
+  .navbar-section {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    .el-menu-dome {
+      position: sticky;
+    }
+  }
+
+  // 用户
+  .user-center {
+    min-width: 100px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    cursor: pointer;
+  }
+}
